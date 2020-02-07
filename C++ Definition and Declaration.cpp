@@ -24,9 +24,14 @@ void DeclarationClass::setTest(int test){ //must defined setTest a content.
 }*/
 
 int main() {
-    DeclarationClass declarationClass;
-    declarationClass.setTest(1218);
+    DeclarationClass declarationClass; // non-pointer.
+    declarationClass.setTest(429); // non-pointer must be use . to call a function.
     
-    cout << declarationClass.getTest() << endl;
+    DeclarationClass *declarationClassPointer = new DeclarationClass(); // pointer.
+    declarationClassPointer->setTest(1125); // pointer must be use -> to call a function.
+  
+    cout << declarationClass.getTest() << endl; // non-pointer.
+    cout << declarationClassPointer->getTest() << endl; // pointer.
+  
     return 0;
 }

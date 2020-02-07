@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
 
+//in c++.h ----------------------------------------------------
 class DeclarationClass{
   public:
     int test;  
@@ -10,10 +11,13 @@ class DeclarationClass{
     void setTest(int test); //just declared a setTest method, don't forget define it.
     
 };
+//----------------------------------------------------------------
 
+// in c++.cpp ----------------------------------------------------
 void DeclarationClass::setTest(int test){ //must defined setTest a content.
    this->test = test;
 }
+//----------------------------------------------------------------
 
 /*int DeclarationClass::getTest(){
     return this->test;
